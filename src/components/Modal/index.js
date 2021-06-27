@@ -6,7 +6,6 @@ import { useEffect, useState } from 'react';
 
 const Modal = ({ email, setShowModal }) => {
   const [newMail, setNewMail] = useState('');
-  console.log(email)
   useEffect(() => {
     const arrayMail = email.split('@');
     const slice = arrayMail[0].length > 8 ? arrayMail[0].substr(8) : '';
